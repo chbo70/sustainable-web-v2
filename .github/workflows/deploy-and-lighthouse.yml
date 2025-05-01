@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages Subdirectory
 on:
   push:
     branches:
+      - "test/*"
       - "*" # This will trigger the workflow for any branch pushed
 
 jobs:
