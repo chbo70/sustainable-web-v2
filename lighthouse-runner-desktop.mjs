@@ -5,7 +5,7 @@ import { url, reportBaseName, chrome } from "./config.mjs";
 
 const categories = ["performance", "accessibility", "best-practices", "seo"];
 
-// Desktop config
+// Desktop configuration
 const desktopOptions = {
   logLevel: "info",
   output: ["json", "html"],
