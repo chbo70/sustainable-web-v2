@@ -1,0 +1,27 @@
+name: Deploy to GitHub Pages Subdirectory
+
+on:
+  push:
+    branches:
+      - "*" # This will trigger the workflow for any branch pushed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build  # make sure this generates your production build in /dist or /build
+
+      - name: Deploy to gh-pages subdirectory
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build # or ./dist, depending on your setup
+          destination_dir: ${{ github.ref_name }} # This uses the branch name to create the subdirectory
+          keep_files: true
+          publish_branch: gh-pages

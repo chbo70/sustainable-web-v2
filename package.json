@@ -1,6 +1,6 @@
 {
-  "name": "sustainable-web-v1",
-  "homepage": "https://chbo70.github.io/sustainable-web-v1",
+  "name": "sustainable-web-v2",
+  "homepage": "https://chbo70.github.io/sustainable-web-v2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -55,6 +55,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "lighthouse": "^12.6.0"
   }
 }
