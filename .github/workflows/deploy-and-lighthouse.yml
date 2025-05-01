@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Set CI to false
+        run: echo "CI=false" >> $GITHUB_ENV
+
       - name: Checkout branch
         uses: actions/checkout@v3
 
