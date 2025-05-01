@@ -29,8 +29,22 @@ const [desktopJson, desktopHtml] = Array.isArray(desktopResult.report)
   ? desktopResult.report
   : [desktopResult.report];
 
-fs.writeFileSync(`lighthouse-${reportBaseName}-desktop.json`, desktopJson);
-fs.writeFileSync(`lighthouse-${reportBaseName}-desktop.html`, desktopHtml);
+// trim slashes from reportBaseName
+const trimmedReportBaseName = reportBaseName.replace(/[\/\\]/g, ""); // Remove all forward slashes and backslashes
+
+const reportsDir = "reports";
+if (!fs.existsSync(reportsDir)) {
+  fs.mkdirSync(reportsDir);
+}
+
+fs.writeFileSync(
+  `${reportsDir}/lighthouse-${trimmedReportBaseName}-desktop.json`,
+  desktopJson
+);
+fs.writeFileSync(
+  `${reportsDir}/lighthouse-${trimmedReportBaseName}-desktop.html`,
+  desktopHtml
+);
 
 console.log(
   `✅ Desktop report done for ${desktopResult.lhr.finalDisplayedUrl}`
