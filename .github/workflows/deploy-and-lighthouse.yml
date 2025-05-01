@@ -15,7 +15,7 @@ jobs:
       - name: Install dependencies and build
         run: |
           npm install
-          npm run build  # make sure this generates your production build in /dist or /build
+          npm run build
 
       - name: Deploy to gh-pages subdirectory
         uses: peaceiris/actions-gh-pages@v3
