@@ -57,4 +57,3 @@ console.log(
 
 // Kill Chrome
 await chrome.kill();
-console.log("✅ Chrome killed");
