@@ -14,7 +14,7 @@ try {
 }
 
 const baseUrl = "https://chbo70.github.io/sustainable-web-v2";
-const url = `${baseUrl}/${branchName}`;
+const url = `${baseUrl}/${branchName}/`;
 const reportBaseName = branchName || "report";
 
 // Validate URL
