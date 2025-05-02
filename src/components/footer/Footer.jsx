@@ -1,16 +1,9 @@
 import React from "react";
 import "./footer.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Facebook from "../../assets/icons/facebook.svg";
 import X from "../../assets/icons/x.svg";
 import Instagram from "../../assets/icons/insta.svg";
 import Linkedin from "../../assets/icons/linkedin.svg";
-import {
-  faFacebookF,
-  faInstagram,
-  faLinkedinIn,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
 import { co2 } from "@tgwf/co2";
 
 const Footer = () => {
