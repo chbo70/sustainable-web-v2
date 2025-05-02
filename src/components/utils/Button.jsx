@@ -1,6 +1,6 @@
 import "./utils.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import Arrow from "../../assets/arrow.svg";
+import Arrow from "../../assets/icons/arrow.svg";
 
 const Button = ({ className, link, text }) => {
   return (
