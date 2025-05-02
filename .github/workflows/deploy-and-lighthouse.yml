@@ -4,11 +4,12 @@ on:
   push:
     branches:
       - "test/*"
-      - "*" # This will trigger the workflow for any branch pushed
+      - "*" # Trigger for any branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Set CI to false
         run: echo "CI=false" >> $GITHUB_ENV
@@ -21,11 +22,29 @@ jobs:
           npm install
           npm run build
 
-      - name: Deploy to gh-pages subdirectory
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # or ./dist, depending on your setup
-          destination_dir: ${{ github.ref_name }} # This uses the branch name to create the subdirectory
-          keep_files: true
-          publish_branch: gh-pages
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Clone gh-pages branch
+        run: |
+          git clone --depth 1 --branch gh-pages https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} gh-pages
+
+      - name: Remove existing subdirectory
+        run: |
+          cd gh-pages
+          rm -rf "${{ github.ref_name }}"
+          cd ..
+
+      - name: Copy build output
+        run: |
+          mkdir -p gh-pages/${{ github.ref_name }}
+          cp -r build/* gh-pages/${{ github.ref_name }}/
+
+      - name: Commit and push
+        run: |
+          cd gh-pages
+          git add .
+          git commit -m "Deploy branch ${{ github.ref_name }} to GitHub Pages"
+          git push origin gh-pages
