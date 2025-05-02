@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { lazy, useEffect, useRef, useState } from "react";
 import "./about.css";
 import gsap from "gsap";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";

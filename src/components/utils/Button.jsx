@@ -7,7 +7,7 @@ const Button = ({ className, link, text }) => {
     <a className={className} type="button" href={link}>
       {text}
       {/* <MdKeyboardArrowRight className="arrow_icon" /> */}
-      <img src={Arrow} alt="arrow_icon" className="arrow_icon" />
+      <img src={Arrow} alt="arrow_icon" className="arrow_icon" loading="lazy" />
     </a>
   );
 };
