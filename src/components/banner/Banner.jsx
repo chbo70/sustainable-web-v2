@@ -1,57 +1,12 @@
-import { React, useRef, useState, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 import "./banner.css";
-import CountUp, { useCountUp, pauseResume } from "react-countup";
+import CountUp from "react-countup";
 import { GiEcology } from "react-icons/gi";
 import { co2 } from "@tgwf/co2";
 
 const Banner = () => {
-  const swdmV4 = new co2({ model: "swd", version: 4 });
   const [emission, setEmission] = useState(0);
 
-  // function getPageWeight() {
-  //   if (!window.performance || !window.performance.getEntriesByType) {
-  //     console.warn("Performance API not supported, using fallback estimation.");
-
-  //     // Use fallback estimation
-  //     if (navigator.connection && navigator.connection.downlink) {
-  //       const estimatedSize = navigator.connection.downlink * 1000 * 100; // Approximate 100s of data transfer
-  //       console.log("Using estimated network size:", estimatedSize, "bytes");
-  //       return estimatedSize;
-  //     }
-
-  //     console.warn("No reliable method to determine page weight.");
-  //     return 0;
-  //   }
-
-  //   // Get resource data if available
-  //   const performance = window.performance.getEntriesByType("resource");
-  //   if (performance.length > 0) {
-  //     const transferSize = performance.reduce(
-  //       (acc, cur) => acc + cur.transferSize,
-  //       0
-  //     );
-  //     return transferSize;
-  //   }
-
-  //   console.warn("Performance API available but returned no data.");
-  //   return 0;
-  // }
-
-  // useEffect(() => {
-  //   const handleLoad = () => {
-  //     requestIdleCallback(() => {
-  //       const pageWeight = getPageWeight();
-  //       if (pageWeight > 0) {
-  //         const estimate = swdmV4.perVisit(pageWeight);
-  //         console.log("Estimation from pageWeight", estimate.toFixed(3), "g");
-  //         setEmission(estimate.toFixed(3));
-  //       }
-  //     });
-  //   };
-
-  //   window.addEventListener("load", handleLoad);
-  //   return () => window.removeEventListener("load", handleLoad);
-  // }, []);
   function getPageWeight() {
     const performance = window.performance.getEntriesByType("resource");
     const transferSize = performance.reduce(
@@ -60,7 +15,10 @@ const Banner = () => {
     );
     return transferSize;
   }
+
   useEffect(() => {
+    const swdmV4 = new co2({ model: "swd", version: 4 });
+
     const handleLoad = () => {
       const pageWeight = getPageWeight();
       const estimate = swdmV4.perVisit(pageWeight);

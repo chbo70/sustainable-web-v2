@@ -38,7 +38,7 @@
 .video_content {
   position: absolute;
   left: 5%;
-  bottom: 10%; /* Move text slightly up */
+  bottom: 10%;
   max-width: 700px;
   color: white;
   font-family: var(--font-secondary);
@@ -46,7 +46,7 @@
   font-weight: bold;
   line-height: 1.4;
   padding: 1rem;
-  border-radius: 8px; /* Smooth edges */
+  border-radius: 8px;
 }
 
 @media (min-width: 672px) {

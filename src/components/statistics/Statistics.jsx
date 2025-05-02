@@ -10,8 +10,6 @@ import {
   Title,
   CategoryScale,
   LinearScale,
-  Scale,
-  scales,
   RadialLinearScale,
   PointElement,
   Filler,
@@ -152,11 +150,11 @@ const dataLine = {
     },
     {
       label: "Average (37.8)",
-      data: Array(15).fill(37.8), // Horizontal reference line for avg
+      data: Array(15).fill(37.8),
       borderColor: "rgba(255, 99, 132, 1)",
       backgroundColor: "rgba(255, 99, 132, 0.2)",
       borderWidth: 2,
-      borderDash: [5, 5], // Dashed line
+      borderDash: [5, 5],
       pointRadius: 0,
     },
   ],
@@ -167,7 +165,7 @@ const optionsLine = {
   scales: {
     y: {
       beginAtZero: true,
-      suggestedMax: 120, // Adjust based on highest value
+      suggestedMax: 120,
       ticks: {
         stepSize: 20,
       },
@@ -208,8 +206,8 @@ const Statistics = () => {
         currentWindowSize.width !== prevWindowSize.current.width ||
         currentWindowSize.height !== prevWindowSize.current.height
       ) {
-        setChartKey((prevKey) => prevKey + 1); // Force re-render
-        prevWindowSize.current = currentWindowSize; // Update the previous window size
+        setChartKey((prevKey) => prevKey + 1);
+        prevWindowSize.current = currentWindowSize;
       }
     };
 

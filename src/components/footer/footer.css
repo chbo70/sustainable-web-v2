@@ -62,32 +62,24 @@
   color: var(--color-accent2);
 }
 
-.social_icons li {
-  margin-right: 10px;
-}
-
-.social_links li:last-child {
-  margin-right: 0;
-}
-
 .facebook_icon {
   height: 24px;
-  color: #1877f2;
+  filter: brightness(0) invert(0.7);
 }
 
 .x_icon {
   height: 24px;
-  color: #c3d3dd;
+  filter: brightness(0) invert(0.7);
 }
 
 .instagram_icon {
   height: 24px;
-  color: #e4405f;
+  filter: brightness(0) invert(0.7);
 }
 
 .linkedin_icon {
   height: 24px;
-  color: #0077b5;
+  filter: brightness(0) invert(0.7);
 }
 
 .footer_bottom {

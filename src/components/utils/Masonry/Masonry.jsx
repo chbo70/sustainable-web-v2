@@ -1,6 +1,5 @@
 import { useState, useEffect, useMemo, useRef } from "react";
 import { useTransition, a } from "@react-spring/web";
-import LazyImage from "../LazyImage";
 import "./Masonry.css";
 
 function Masonry({ data }) {
@@ -15,7 +14,7 @@ function Masonry({ data }) {
       } else if (window.matchMedia("(min-width: 600px)").matches) {
         setColumns(3);
       } else {
-        setColumns(1); // Breakpoint for mobile devices
+        setColumns(1);
       }
     };
 

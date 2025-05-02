@@ -1,5 +1,4 @@
 import Button from "../utils/Button";
-import Card from "../utils/Card";
 import Paper1 from "../../assets/tom_greenwood.jpg";
 import Paper2 from "../../assets/paper_2.jpg";
 import Paper3 from "../../assets/paper_3.png";
@@ -20,7 +19,7 @@ const Content = () => {
         }
       },
       {
-        threshold: 0.4, // Trigger when 10% of the section is visible
+        threshold: 0.4,
       }
     );
 
@@ -43,22 +42,6 @@ const Content = () => {
         <h1 className="content_header">Latest Research</h1>
       </div>
       <div className="content_wrapper">
-        {/* <Card
-          title="Title 1"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla ut nulla sit amet nisi maximus."
-        />
-        <Card
-          title="Title 2"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla ut nulla sit amet nisi maximus."
-        />
-        <Card
-          title="Title 3"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla ut nulla sit amet nisi maximus."
-        />
-        <Card
-          title="Title 4"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla ut nulla sit amet nisi maximus."
-        /> */}
         <div className="card_wrapper">
           <div className="content_card">
             <img

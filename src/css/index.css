@@ -14,10 +14,8 @@ body {
   overflow-x: hidden;
 }
 
-/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Mr+Dafoe&family=Playfair+Display:wght@400;700&display=swap");
 
-/* Define color variables */
 :root {
   --color-bg: #eaece9;
   --color-primary: #7e8eb0;
@@ -66,60 +64,6 @@ body {
   }
 }
 
-@keyframes fade-in-forward {
-  0% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes slide-in-right {
-  from {
-    opacity: 0;
-    transform: translateX(-50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-in-left {
-  from {
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-out-right {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateX(-20%);
-  }
-}
-
-/* Create some animations like slide in, fade in, spin and parallax */
-@keyframes slide-in {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -128,32 +72,3 @@ body {
     opacity: 1;
   }
 }
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes parallax {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
-
-@keyframes zoom-in {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-/* Add more animations types dont add one that is already present*/

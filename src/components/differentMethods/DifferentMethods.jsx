@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 import Masonry from "../utils/Masonry/Masonry";
 import "./differentmethods.css";
 import Image1 from "../../assets/masonry_images/image_01.webp";

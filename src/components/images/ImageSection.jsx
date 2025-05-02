@@ -24,7 +24,6 @@ const ImageSection = () => {
   }, []);
   return (
     <section className="image-section">
-      {/* <div className="video_triangle_1"></div> */}
       <div className="image-section-overlay">
         <ul className="image-content-list">
           <li className="image-content-list-item">
@@ -102,7 +101,6 @@ const ImageSection = () => {
                 provide a better, more user-friendly digital experience while
                 contributing to a greener web.
               </p>
-              {/* <div className="video_triangle_2"></div> */}
             </div>
           </li>
         </ul>

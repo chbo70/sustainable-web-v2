@@ -68,8 +68,6 @@
   margin: 1rem 0;
 }
 
-/* Create medai queries empty for min width 384px, 672px, 768px, 1152px, 1600px */
-/* Create media queries for min width 384px */
 @media (min-width: 672px) {
   .statistics {
     padding: 2rem;

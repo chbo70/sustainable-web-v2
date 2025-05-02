@@ -110,7 +110,6 @@
   position: absolute;
 }
 
-/* Wrapper for the text content */
 .hero_wrapper {
   display: flex;
   flex-direction: column;
@@ -132,7 +131,6 @@
   margin: 0;
 }
 
-/* Subtitle styling */
 .hero_subtitle {
   font-family: var(--font-playfair);
   font-size: 1.9rem;
@@ -149,7 +147,6 @@
   font-size: x-large;
 }
 
-/* Button Styling */
 .hero_cta_button {
   display: flex;
   align-items: center;
@@ -163,5 +160,5 @@
 }
 
 .hero_cta_button:hover {
-  background: var(--color-golden-glow); /* Darker red on hover */
+  background: var(--color-golden-glow);
 }
