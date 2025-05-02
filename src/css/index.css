@@ -46,6 +46,14 @@ body {
   --font-playfair: "Playfair Display", serif; /* Playfair Display font */
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
