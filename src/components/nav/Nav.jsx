@@ -1,4 +1,4 @@
-import Logo from "../../assets/leaf.svg";
+import Logo from "../../assets/icons/leaf.svg";
 import "./nav.css";
 import { useEffect } from "react";
 
