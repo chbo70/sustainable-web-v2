@@ -67,9 +67,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: var(--color-snow-white);
 }
-
 .content_card_image {
-  max-width: 320px;
+  max-width: 280px;
+  display: flex;
+  justify-self: center;
   align-self: center;
 }
 
@@ -124,11 +125,23 @@
   .content_header {
     font-size: 3rem;
   }
+
+  .content_card_title {
+    display: flex;
+    align-items: center;
+  }
+  .content_card_picture {
+    min-height: 452px;
+  }
 }
 
 @media (min-width: 1024px) {
   .card_wrapper {
     flex: 1 1 calc(20% - 20px);
+  }
+
+  .content_card_picture {
+    max-height: 640px;
   }
 }
 

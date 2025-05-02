@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./videosection.css";
-import VideoFile from "../../assets/videos/forest_high.mp4";
+import HighResolutionVideo from "../../assets/videos/forest_high.mp4";
+import LowResolutionVideo from "../../assets/videos/forest_low.webm";
 
 const VideoSection = () => {
   const videoRef = useRef(null);
@@ -31,7 +32,16 @@ const VideoSection = () => {
       <div className="video_container">
         <div className="video_wrapper">
           <video className="video_player" muted autoPlay loop>
-            <source src={VideoFile} type="video/mp4" />
+            <source
+              src={LowResolutionVideo}
+              type="video/mp4"
+              media="(max-width: 672px)" // Load low resolution on mobile devices
+            />
+            <source
+              src={HighResolutionVideo}
+              type="video/mp4"
+              media="(min-width: 673px)" // Load high resolution on larger screens
+            />
             Your browser does not support the video tag.
           </video>
         </div>

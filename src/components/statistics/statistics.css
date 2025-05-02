@@ -16,7 +16,7 @@
 
 .statistics_header p {
   font-family: var(--font-tertiary);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--color-text);
   text-align: justify;
   margin: 1rem 0;
@@ -62,7 +62,7 @@
 .statistics_chart_bar_horizontal_content p,
 .statistics_chart_line_content p {
   font-family: var(--font-tertiary);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--color-text);
   text-align: justify;
   margin: 1rem 0;
