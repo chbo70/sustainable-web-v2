@@ -1,4 +1,3 @@
-// desktopTest.js
 import fs from "fs";
 import lighthouse from "lighthouse";
 import { url, reportBaseName, chrome } from "./config.mjs";
@@ -23,37 +22,35 @@ const desktopOptions = {
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
 };
 
-// Run Desktop Audit
-const desktopResult = await lighthouse(url, desktopOptions);
-const [desktopJson, desktopHtml] = Array.isArray(desktopResult.report)
-  ? desktopResult.report
-  : [desktopResult.report];
-
-// trim slashes from reportBaseName
-const trimmedReportBaseName = reportBaseName.replace(/[\/\\]/g, ""); // Remove all forward slashes and backslashes
+// Trim slashes from base name
+const trimmedReportBaseName = reportBaseName.replace(/[\/\\]/g, "");
 
 const reportsDir = "reports";
 if (!fs.existsSync(reportsDir)) {
   fs.mkdirSync(reportsDir);
 }
 
-fs.writeFileSync(
-  `${reportsDir}/lighthouse-${trimmedReportBaseName}-desktop.json`,
-  desktopJson
-);
-fs.writeFileSync(
-  `${reportsDir}/lighthouse-${trimmedReportBaseName}-desktop.html`,
-  desktopHtml
-);
+for (let i = 1; i <= 3; i++) {
+  const result = await lighthouse(url, desktopOptions);
+  const [jsonReport, htmlReport] = Array.isArray(result.report)
+    ? result.report
+    : [result.report];
 
-console.log(
-  `✅ Desktop report done for ${desktopResult.lhr.finalDisplayedUrl}`
-);
-console.log(
-  `🖥️  Performance score: ${
-    desktopResult.lhr.categories.performance.score * 100
-  }`
-);
+  const jsonPath = `${reportsDir}/lighthouse-${trimmedReportBaseName}-desktop-${i}.json`;
+  const htmlPath = `${reportsDir}/lighthouse-${trimmedReportBaseName}-desktop-${i}.html`;
+
+  fs.writeFileSync(jsonPath, jsonReport);
+  fs.writeFileSync(htmlPath, htmlReport);
+
+  console.log(
+    `✅ [${i}/3] Desktop report done for ${result.lhr.finalDisplayedUrl}`
+  );
+  console.log(
+    `🖥️  [${i}/3] Performance score: ${
+      result.lhr.categories.performance.score * 100
+    }`
+  );
+}
 
 // Close Chrome instance
 await chrome.kill();

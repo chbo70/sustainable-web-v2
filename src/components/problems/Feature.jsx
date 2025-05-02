@@ -1,6 +1,6 @@
 import React from "react";
 import "./feature.css";
-import Puzzle from "../../assets/puzzle.svg";
+import Puzzle from "../../assets/icons/puzzle.svg";
 import { FaChartLine, FaRankingStar } from "react-icons/fa6";
 
 const Feature = ({ title, reason, price, features, isMain }) => {

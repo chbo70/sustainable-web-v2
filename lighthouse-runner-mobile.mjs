@@ -1,4 +1,3 @@
-// mobileTest.js
 import fs from "fs";
 import lighthouse from "lighthouse";
 import { url, reportBaseName, chrome } from "./config.mjs";
@@ -15,34 +14,35 @@ const mobileOptions = {
   screenEmulation: undefined,
 };
 
-// Run Mobile Audit
-const mobileResult = await lighthouse(url, mobileOptions);
-const [mobileJson, mobileHtml] = Array.isArray(mobileResult.report)
-  ? mobileResult.report
-  : [mobileResult.report];
+// Trim slashes from base name
+const trimmedReportBaseName = reportBaseName.replace(/[\/\\]/g, "");
 
-// trim slashes from reportBaseName
-const trimmedReportBaseName = reportBaseName.replace(/[\/\\]/g, ""); // Remove all forward slashes and backslashes
-
-// in reports directory
 const reportsDir = "reports";
 if (!fs.existsSync(reportsDir)) {
   fs.mkdirSync(reportsDir);
 }
 
-fs.writeFileSync(
-  `${reportsDir}/lighthouse-${trimmedReportBaseName}-mobile.json`,
-  mobileJson
-);
-fs.writeFileSync(
-  `${reportsDir}/lighthouse-${trimmedReportBaseName}-mobile.html`,
-  mobileHtml
-);
+for (let i = 1; i <= 3; i++) {
+  const result = await lighthouse(url, mobileOptions);
+  const [jsonReport, htmlReport] = Array.isArray(result.report)
+    ? result.report
+    : [result.report];
 
-console.log(`✅ Mobile report done for ${mobileResult.lhr.finalDisplayedUrl}`);
-console.log(
-  `📱 Performance score: ${mobileResult.lhr.categories.performance.score * 100}`
-);
+  const jsonPath = `${reportsDir}/lighthouse-${trimmedReportBaseName}-mobile-${i}.json`;
+  const htmlPath = `${reportsDir}/lighthouse-${trimmedReportBaseName}-mobile-${i}.html`;
+
+  fs.writeFileSync(jsonPath, jsonReport);
+  fs.writeFileSync(htmlPath, htmlReport);
+
+  console.log(
+    `✅ [${i}/3] Mobile report done for ${result.lhr.finalDisplayedUrl}`
+  );
+  console.log(
+    `📱 [${i}/3] Performance score: ${
+      result.lhr.categories.performance.score * 100
+    }`
+  );
+}
 
 // Close Chrome instance
 await chrome.kill();

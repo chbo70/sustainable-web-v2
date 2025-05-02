@@ -1,10 +1,10 @@
 import React from "react";
 import "./footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Facebook from "../../assets/facebook.svg";
-import X from "../../assets/x.svg";
-import Instagram from "../../assets/insta.svg";
-import Linkedin from "../../assets/linkedin.svg";
+import Facebook from "../../assets/icons/facebook.svg";
+import X from "../../assets/icons/x.svg";
+import Instagram from "../../assets/icons/insta.svg";
+import Linkedin from "../../assets/icons/linkedin.svg";
 import {
   faFacebookF,
   faInstagram,

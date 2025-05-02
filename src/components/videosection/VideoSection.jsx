@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./videosection.css";
-import VideoFile from "../../assets/forest_high.mp4";
+import VideoFile from "../../assets/videos/forest_high.mp4";
 
 const VideoSection = () => {
   const videoRef = useRef(null);
