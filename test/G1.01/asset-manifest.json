@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sustainable-web-v2/test/G1.01/static/css/main.fe915148.css",
-    "main.js": "/sustainable-web-v2/test/G1.01/static/js/main.26fb96e7.js",
+    "main.css": "/sustainable-web-v2/test/G1.01/static/css/main.79560b5d.css",
+    "main.js": "/sustainable-web-v2/test/G1.01/static/js/main.0824447f.js",
     "static/js/453.1b23ba4c.chunk.js": "/sustainable-web-v2/test/G1.01/static/js/453.1b23ba4c.chunk.js",
     "static/media/forest_high.mp4": "/sustainable-web-v2/test/G1.01/static/media/forest_high.e2b4203c3b3d35ecfa89.mp4",
     "static/media/image_12.webp": "/sustainable-web-v2/test/G1.01/static/media/image_12.166d08066ce4c3d5e3d6.webp",
@@ -17,22 +17,22 @@
     "static/media/image_8.avif": "/sustainable-web-v2/test/G1.01/static/media/image_8.17d63ba84fa812762b1b.avif",
     "static/media/image_02.webp": "/sustainable-web-v2/test/G1.01/static/media/image_02.b5973915b0b8319f5649.webp",
     "static/media/image_5.avif": "/sustainable-web-v2/test/G1.01/static/media/image_5.ded6dcb1100405d8c72c.avif",
-    "static/media/hero_leaf_2.jpg": "/sustainable-web-v2/test/G1.01/static/media/hero_leaf_2.e323a7b5b8051d0ee2a6.jpg",
     "static/media/image_06.webp": "/sustainable-web-v2/test/G1.01/static/media/image_06.a0066a1bfe227743a080.webp",
     "static/media/image_10.webp": "/sustainable-web-v2/test/G1.01/static/media/image_10.5c7deb2eee5b05123a5b.webp",
     "static/media/image_4.avif": "/sustainable-web-v2/test/G1.01/static/media/image_4.994e98bac0a91b698ae1.avif",
-    "static/media/paper_2.jpg": "/sustainable-web-v2/test/G1.01/static/media/paper_2.9f7b63f7247691bef7a3.jpg",
     "static/media/image_08.webp": "/sustainable-web-v2/test/G1.01/static/media/image_08.b7720b245ecb3aa4b9c7.webp",
     "static/media/image_03.webp": "/sustainable-web-v2/test/G1.01/static/media/image_03.0d55b8f30925cbbcbc41.webp",
     "static/media/image_2.avif": "/sustainable-web-v2/test/G1.01/static/media/image_2.2c8f928cb6b970f604c1.avif",
-    "static/media/paper_3.png": "/sustainable-web-v2/test/G1.01/static/media/paper_3.ec21e260daef4c44fe27.png",
     "static/media/image_13.webp": "/sustainable-web-v2/test/G1.01/static/media/image_13.a2a8c2b3401a21bd4336.webp",
     "static/media/image_3.avif": "/sustainable-web-v2/test/G1.01/static/media/image_3.4b5829579685bf00149c.avif",
-    "static/media/one-leaf.jpg": "/sustainable-web-v2/test/G1.01/static/media/one-leaf.c3252abdb47d23f56716.jpg",
-    "static/media/hero_leaf_square.jpg": "/sustainable-web-v2/test/G1.01/static/media/hero_leaf_square.04b8e1676a2b40b7e5dd.jpg",
+    "static/media/paper_2.webp": "/sustainable-web-v2/test/G1.01/static/media/paper_2.2262eecd0f3565d42564.webp",
+    "static/media/paper_3.webp": "/sustainable-web-v2/test/G1.01/static/media/paper_3.de82a848ff3f54d7ba8e.webp",
+    "static/media/hero_leaf_2.webp": "/sustainable-web-v2/test/G1.01/static/media/hero_leaf_2.a023329d2b44c616de72.webp",
     "static/media/image_7.avif": "/sustainable-web-v2/test/G1.01/static/media/image_7.edb45f9eb490ca637865.avif",
-    "static/media/tom_greenwood.jpg": "/sustainable-web-v2/test/G1.01/static/media/tom_greenwood.c1df2d761c66cd466e11.jpg",
-    "static/media/paper_4.jpg": "/sustainable-web-v2/test/G1.01/static/media/paper_4.d0c594cda33a0cab0e37.jpg",
+    "static/media/one-leaf.webp": "/sustainable-web-v2/test/G1.01/static/media/one-leaf.7c6753945bdf4731d5b2.webp",
+    "static/media/tom_greenwood.webp": "/sustainable-web-v2/test/G1.01/static/media/tom_greenwood.9a7da9cf405d908d302c.webp",
+    "static/media/hero_leaf_square.webp": "/sustainable-web-v2/test/G1.01/static/media/hero_leaf_square.c7f8ebb6b767b8f038aa.webp",
+    "static/media/paper_4.webp": "/sustainable-web-v2/test/G1.01/static/media/paper_4.3fb70ef6e26c822e65e4.webp",
     "static/media/puzzle.svg": "/sustainable-web-v2/test/G1.01/static/media/puzzle.a507eb7fdaf46c5e1e23252a0b940ec3.svg",
     "static/media/leaf.svg": "/sustainable-web-v2/test/G1.01/static/media/leaf.c12bdb47b08c190027426306683258a2.svg",
     "static/media/insta.svg": "/sustainable-web-v2/test/G1.01/static/media/insta.e86e0be1098985881f63752fdf13a144.svg",
@@ -41,12 +41,12 @@
     "static/media/facebook.svg": "/sustainable-web-v2/test/G1.01/static/media/facebook.f7ae25bbf3057cf5890c485995f2e9d5.svg",
     "static/media/x.svg": "/sustainable-web-v2/test/G1.01/static/media/x.685ab28e7192aeb4ae9a34cf265c3dbf.svg",
     "static/media/arrow.svg": "/sustainable-web-v2/test/G1.01/static/media/arrow.739f84193b27846431893070f0352ab0.svg",
-    "main.fe915148.css.map": "/sustainable-web-v2/test/G1.01/static/css/main.fe915148.css.map",
-    "main.26fb96e7.js.map": "/sustainable-web-v2/test/G1.01/static/js/main.26fb96e7.js.map",
+    "main.79560b5d.css.map": "/sustainable-web-v2/test/G1.01/static/css/main.79560b5d.css.map",
+    "main.0824447f.js.map": "/sustainable-web-v2/test/G1.01/static/js/main.0824447f.js.map",
     "453.1b23ba4c.chunk.js.map": "/sustainable-web-v2/test/G1.01/static/js/453.1b23ba4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe915148.css",
-    "static/js/main.26fb96e7.js"
+    "static/css/main.79560b5d.css",
+    "static/js/main.0824447f.js"
   ]
 }
