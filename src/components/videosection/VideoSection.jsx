@@ -30,10 +30,10 @@ const VideoSection = () => {
     <section className="video">
       <div className="video_container">
         <div className="video_wrapper">
-          <video className="video_player" muted autoPlay loop>
+          {/* <video className="video_player" muted autoPlay loop>
             <source src={VideoFile} type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
         </div>
         <div className="video_overlay"></div>
         <div className="video_content">
