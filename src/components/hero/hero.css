@@ -8,7 +8,7 @@
   padding-bottom: 4rem;
   padding-right: 2rem;
   position: relative;
-  background-image: url(../../assets/hero_leaf_square.jpg);
+  background-image: url(../../assets/hero_leaf_square.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
@@ -71,7 +71,7 @@
     grid-row-start: 2;
     background-size: cover;
     background-position: bottom right;
-    background-image: url(../../assets/hero_leaf_2.jpg);
+    background-image: url(../../assets/hero_leaf_2.webp);
     background-repeat: no-repeat;
     background-color: #fcfefd;
   }
@@ -92,7 +92,7 @@
   .hero {
     background-size: contain;
     background-position: bottom right;
-    background-image: url(../../assets/hero_leaf_2.jpg);
+    background-image: url(../../assets/hero_leaf_2.webp);
     background-repeat: no-repeat;
   }
 

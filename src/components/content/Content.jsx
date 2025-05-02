@@ -1,9 +1,9 @@
 import Button from "../utils/Button";
 import Card from "../utils/Card";
-import Paper1 from "../../assets/tom_greenwood.jpg";
-import Paper2 from "../../assets/paper_2.jpg";
-import Paper3 from "../../assets/paper_3.png";
-import Paper4 from "../../assets/paper_4.jpg";
+import Paper1 from "../../assets/tom_greenwood.webp";
+import Paper2 from "../../assets/paper_2.webp";
+import Paper3 from "../../assets/paper_3.webp";
+import Paper4 from "../../assets/paper_4.webp";
 import "./content.css";
 import React, { useEffect, useRef } from "react";
 
