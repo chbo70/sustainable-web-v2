@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sustainable-web-v2/test/G8.01/static/css/main.ff4fb3e9.css",
-    "main.js": "/sustainable-web-v2/test/G8.01/static/js/main.c7c67f4a.js",
+    "main.css": "/sustainable-web-v2/test/G8.01/static/css/main.0815fb88.css",
+    "main.js": "/sustainable-web-v2/test/G8.01/static/js/main.c4658a50.js",
     "static/js/453.1b23ba4c.chunk.js": "/sustainable-web-v2/test/G8.01/static/js/453.1b23ba4c.chunk.js",
     "static/media/forest_high.mp4": "/sustainable-web-v2/test/G8.01/static/media/forest_high.e2b4203c3b3d35ecfa89.mp4",
     "static/media/image_12.webp": "/sustainable-web-v2/test/G8.01/static/media/image_12.166d08066ce4c3d5e3d6.webp",
@@ -41,12 +41,12 @@
     "static/media/facebook.svg": "/sustainable-web-v2/test/G8.01/static/media/facebook.f7ae25bbf3057cf5890c485995f2e9d5.svg",
     "static/media/x.svg": "/sustainable-web-v2/test/G8.01/static/media/x.685ab28e7192aeb4ae9a34cf265c3dbf.svg",
     "static/media/arrow.svg": "/sustainable-web-v2/test/G8.01/static/media/arrow.739f84193b27846431893070f0352ab0.svg",
-    "main.ff4fb3e9.css.map": "/sustainable-web-v2/test/G8.01/static/css/main.ff4fb3e9.css.map",
-    "main.c7c67f4a.js.map": "/sustainable-web-v2/test/G8.01/static/js/main.c7c67f4a.js.map",
+    "main.0815fb88.css.map": "/sustainable-web-v2/test/G8.01/static/css/main.0815fb88.css.map",
+    "main.c4658a50.js.map": "/sustainable-web-v2/test/G8.01/static/js/main.c4658a50.js.map",
     "453.1b23ba4c.chunk.js.map": "/sustainable-web-v2/test/G8.01/static/js/453.1b23ba4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff4fb3e9.css",
-    "static/js/main.c7c67f4a.js"
+    "static/css/main.0815fb88.css",
+    "static/js/main.c4658a50.js"
   ]
 }
