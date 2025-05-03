@@ -1,17 +1,9 @@
 import React from "react";
 import "./footer.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Facebook from "../../assets/icons/facebook.svg";
 import X from "../../assets/icons/x.svg";
 import Instagram from "../../assets/icons/insta.svg";
 import Linkedin from "../../assets/icons/linkedin.svg";
-import {
-  faFacebookF,
-  faInstagram,
-  faLinkedinIn,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { co2 } from "@tgwf/co2";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -53,19 +45,34 @@ const Footer = () => {
           <div className="social_links">
             {/* eslint-disable-next-line */}
             <a href="https://www.facebook.com/?locale=de_DE">
-              <img className="facebook_icon" src={Facebook} alt="facebook" />
+              <img
+                className="facebook_icon"
+                src={Facebook}
+                alt="facebook"
+                loading="lazy"
+              />
             </a>
             {/* eslint-disable-next-line */}
             <a href="https://x.com/?lang=de">
-              <img className="x_icon" src={X} alt="X" />
+              <img className="x_icon" src={X} alt="X" loading="lazy" />
             </a>
             {/* eslint-disable-next-line */}
             <a href="https://www.instagram.com/">
-              <img className="instagram_icon" src={Instagram} alt="instagram" />
+              <img
+                className="instagram_icon"
+                src={Instagram}
+                alt="instagram"
+                loading="lazy"
+              />
             </a>
             {/* eslint-disable-next-line */}
             <a href="https://at.linkedin.com/">
-              <img className="linkedin_icon" src={Linkedin} alt="linkedin" />
+              <img
+                className="linkedin_icon"
+                src={Linkedin}
+                alt="linkedin"
+                loading="lazy"
+              />
             </a>
           </div>
         </div>

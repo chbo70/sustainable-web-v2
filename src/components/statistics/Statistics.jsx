@@ -10,8 +10,6 @@ import {
   Title,
   CategoryScale,
   LinearScale,
-  Scale,
-  scales,
   RadialLinearScale,
   PointElement,
   Filler,

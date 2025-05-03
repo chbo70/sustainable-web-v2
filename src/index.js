@@ -2,7 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./css/index.css";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+
+function setFontCookieWhenLoaded(fontName = "Montserrat") {
+  const cookieKey = `font-loaded-${fontName}`;
+
+  if (
+    document.cookie
+      .split("; ")
+      .find((row) => row.startsWith(`${cookieKey}=true`))
+  ) {
+    console.log(`Cookie already set for ${fontName}`);
+    return;
+  }
+
+  document.fonts.load(`1em ${fontName}`).then(() => {
+    document.cookie = `${cookieKey}=true; path=/; max-age=31536000`;
+    console.log(`${fontName} is now loaded; cookie set.`);
+  });
+}
+
+setFontCookieWhenLoaded();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -10,8 +29,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

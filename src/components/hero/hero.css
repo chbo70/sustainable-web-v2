@@ -3,25 +3,17 @@
   gap: 1rem;
   grid-template-rows: 1fr 2fr;
   height: 70vh;
-  padding-top: 5rem;
-  padding-left: 2rem;
-  padding-bottom: 4rem;
-  padding-right: 2rem;
+  padding: 5rem 2rem 4rem;
   position: relative;
-  background-image: url(../../assets/hero_leaf_square.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top center;
+  background: url(../../assets/hero_leaf_square.webp) no-repeat top center /
+    contain;
 }
 
 @media screen and (min-width: 384px) {
   .hero {
     height: 90vh;
-    padding-left: 2rem;
-    padding-bottom: 4rem;
-    background-size: cover;
-
-    background-position: left;
+    padding: 5rem 2rem 4rem;
+    background: url(../../assets/hero_leaf_square.webp) no-repeat left / cover;
   }
 
   .hero_wrapper {
@@ -33,10 +25,8 @@
 @media screen and (min-width: 672px) {
   .hero {
     height: 80vh;
-    padding-left: 2rem;
-    padding-bottom: 4rem;
-    background-size: cover;
-    background-position: left;
+    padding: 5rem 2rem 4rem;
+    background: url(../../assets/hero_leaf_square.webp) no-repeat left / cover;
   }
 
   .hero_wrapper {
@@ -48,12 +38,9 @@
 @media screen and (min-width: 768px) {
   .hero {
     height: 70vh;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 1fr 1.5fr;
-    padding-left: 4rem;
-    padding-bottom: 4rem;
-    background-size: cover;
-    background-position: left;
+    grid-template: 1fr 1fr 1.5fr / 1fr 4fr 1fr;
+    padding: 5rem 2rem 4rem 4rem;
+    background: url(../../assets/hero_leaf_square.webp) no-repeat left / cover;
   }
 
   .hero_wrapper {
@@ -66,21 +53,16 @@
 @media screen and (min-width: 1152px) {
   .hero {
     height: 85vh;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template: 1fr 1fr 1fr / 2fr 1fr 1fr;
     grid-row-start: 2;
-    background-size: cover;
-    background-position: bottom right;
-    background-image: url(../../assets/hero_leaf_2.jpg);
-    background-repeat: no-repeat;
-    background-color: #fcfefd;
+    background: #fcfefd url(../../assets/hero_leaf_2.webp) no-repeat bottom
+      right / cover;
   }
 
   .hero_wrapper {
     grid-row-start: 2;
     grid-column-start: 1;
-    padding-top: 2rem;
-    padding-left: 4rem;
+    padding: 2rem 0 0 4rem;
   }
 
   .hero_title {
@@ -90,10 +72,8 @@
 
 @media screen and (min-width: 2048px) {
   .hero {
-    background-size: contain;
-    background-position: bottom right;
-    background-image: url(../../assets/hero_leaf_2.jpg);
-    background-repeat: no-repeat;
+    background: url(../../assets/hero_leaf_2.webp) no-repeat bottom right /
+      contain;
   }
 
   .hero_title {
@@ -110,7 +90,6 @@
   position: absolute;
 }
 
-/* Wrapper for the text content */
 .hero_wrapper {
   display: flex;
   flex-direction: column;
@@ -122,23 +101,17 @@
 }
 
 .hero_title {
-  animation-name: fade-in;
-  animation-duration: 1750ms;
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
+  animation: fade-in 1750ms;
+  font: 700 3rem "Montserrat", sans-serif;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   margin: 0;
 }
 
-/* Subtitle styling */
 .hero_subtitle {
-  font-family: var(--font-playfair);
-  font-size: 1.9rem;
+  font: 1.9rem var(--font-playfair);
   padding: 10px;
-  animation-name: slide-in-bottom;
-  animation-duration: 1750ms;
+  animation: slide-in-bottom 1750ms;
 }
 
 .hero_cta {
@@ -149,7 +122,6 @@
   font-size: x-large;
 }
 
-/* Button Styling */
 .hero_cta_button {
   display: flex;
   align-items: center;
@@ -157,11 +129,10 @@
   background-color: var(--color-pine-green);
   padding: 10px 20px;
   border-radius: 5px;
-  animation-name: slide-in-bottom;
-  animation-duration: 1750ms;
+  animation: slide-in-bottom 1750ms;
   color: #fcfefd;
 }
 
 .hero_cta_button:hover {
-  background: var(--color-golden-glow); /* Darker red on hover */
+  background: var(--color-golden-glow);
 }

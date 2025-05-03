@@ -1,6 +1,6 @@
 .feature_card {
   display: grid;
-  background: white;
+  background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -11,7 +11,6 @@
 .card-icon {
   display: flex;
   justify-content: center;
-  height: fit-content;
   align-items: center;
   font-size: 4.5rem;
   padding: 2rem;
@@ -28,7 +27,6 @@
 .card-title {
   font-family: var(--font-secondary);
   font-size: 1.5rem;
-  font-weight: 700;
   font-weight: bold;
   color: var(--color-neutral3);
 }
@@ -36,17 +34,16 @@
 .card-reason {
   font-size: 1.2rem;
   font-family: var(--font-playfair);
-  color: #666;
+  color: var(--color-text);
   margin-bottom: 15px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
 }
 
 .card-features {
   list-style: none;
-  padding: 0;
-  text-align: start;
   padding: 1rem;
+  text-align: start;
+  text-align: center;
   font-size: 1.2rem;
   font-family: var(--font-playfair);
 }
@@ -62,11 +59,7 @@
 }
 
 .not-included {
-  color: red;
-}
-
-.card-button:hover {
-  background: darkblue;
+  color: var(--color-text);
 }
 
 /* Special styling for the main card */
@@ -74,45 +67,13 @@
   transform: scale(1.1);
 }
 
-.main-card .card-title,
-.main-card .card-reason,
-.main-card .card-price {
-}
-
 .puzzle_icon {
   height: 72px;
 }
 
-.about_slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 1rem;
-}
-
-.about_slider_image_wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about_slider_image {
-  width: 100%;
-  height: 100%;
-  align-self: center;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
 @media screen and (min-width: 384px) {
   .feature_card {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 2rem 1rem;
   }
 
   .main-card {
@@ -120,22 +81,9 @@
   }
 }
 
-@media screen and (min-width: 512px) {
-  .feature_card {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .feature_card {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .card-title {
@@ -154,9 +102,5 @@
 @media screen and (min-width: 1152px) {
   .feature_card {
     grid-template-columns: 1fr;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 }

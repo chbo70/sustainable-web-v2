@@ -15,7 +15,7 @@ function Masonry({ data }) {
       } else if (window.matchMedia("(min-width: 600px)").matches) {
         setColumns(3);
       } else {
-        setColumns(1); // Breakpoint for mobile devices
+        setColumns(1);
       }
     };
 
@@ -34,7 +34,7 @@ function Masonry({ data }) {
       }
     };
 
-    handleResize(); // Set initial width
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [ref]);
@@ -71,15 +71,10 @@ function Masonry({ data }) {
     <div ref={ref} className="masonry" style={{ height: Math.max(...heights) }}>
       {transitions((style, item) => (
         <a.div key={item.id} style={style}>
-          <div
-            style={{
-              backgroundColor: "#ffffff", // Set background if needed
-              width: "100%",
-              height: "100%",
-              backgroundImage: `url(${item.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
+          <LazyImage
+            src={item.image}
+            alt={`Image ${item.id}`}
+            style={{ width: "100%", height: "100%" }}
           />
         </a.div>
       ))}

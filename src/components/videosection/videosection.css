@@ -41,9 +41,7 @@
   bottom: 10%; /* Move text slightly up */
   max-width: 700px;
   color: white;
-  font-family: var(--font-secondary);
-  font-size: 1.2rem;
-  font-weight: bold;
+  font: bold 1.2rem var(--font-secondary);
   line-height: 1.4;
   padding: 1rem;
   border-radius: 8px; /* Smooth edges */
@@ -65,4 +63,21 @@
   .video_content {
     font-size: 1.9rem;
   }
+}
+
+.video_play_button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.video_play_button:hover {
+  background: #fff;
+  color: #000;
 }

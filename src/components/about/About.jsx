@@ -105,7 +105,11 @@ const About = () => {
       </div>
 
       <div className="about_slider">
-        <button className="slider_button left" onClick={prevSlide}>
+        <button
+          aria-label="Previous Slide"
+          className="slider_button left"
+          onClick={prevSlide}
+        >
           <FaChevronLeft />
         </button>
 
@@ -127,7 +131,11 @@ const About = () => {
           </div>
         </div>
 
-        <button className="slider_button right" onClick={nextSlide}>
+        <button
+          aria-label="Next Slide"
+          className="slider_button right"
+          onClick={nextSlide}
+        >
           <FaChevronRight />
         </button>
       </div>

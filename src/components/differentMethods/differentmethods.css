@@ -4,21 +4,16 @@
 }
 
 .differentMethods_header {
-  font-family: var(--font-primary);
+  font: 700 2.5rem var(--font-primary);
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
   margin: 1rem 0;
   color: var(--color-neutral3);
 }
 
 @media (min-width: 1152px) {
   .differentMethods {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding: 2.5rem 4rem;
   }
 
   .differentMethods_header {

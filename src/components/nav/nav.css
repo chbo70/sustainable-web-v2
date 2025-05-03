@@ -1,19 +1,18 @@
 .logo {
+  display: block;
   width: 60px;
   height: 60px;
-  display: block;
   margin: 0.5rem;
 }
 
 .nav-links {
-  font-size: large;
   display: flex;
   flex-direction: row;
+  font-size: large;
   letter-spacing: 0.2em;
 }
 
 .navbar {
-  background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -22,29 +21,28 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 8px 0;
   font-family: var(--font-secondary);
-  padding-top: 8px;
-  padding-bottom: 8px;
+  background: transparent;
 }
 
 .navbar.sticky {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--color-neutral2);
+  background: var(--color-neutral2);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-  transition: all 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .navbar .nav_link_item {
-  color: var(--color-neutral1);
-  text-decoration: none;
-  font-weight: 700;
-  margin: 0 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0 1rem;
+  font-weight: 700;
+  color: var(--color-neutral1);
+  text-decoration: none;
 }
 
 .navbar .nav_link_item:hover {
