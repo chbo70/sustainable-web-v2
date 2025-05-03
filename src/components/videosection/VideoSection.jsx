@@ -32,6 +32,7 @@ const VideoSection = () => {
         <div className="video_wrapper">
           <video className="video_player" muted autoPlay loop>
             <source src={VideoFile} type="video/mp4" />
+            <track kind="captions" srcLang="en" src="" label="English" />
             Your browser does not support the video tag.
           </video>
         </div>

@@ -36,7 +36,7 @@
 .card-reason {
   font-size: 1.2rem;
   font-family: var(--font-playfair);
-  color: #666;
+  color: var(--color-text);
   margin-bottom: 15px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -45,7 +45,7 @@
 .card-features {
   list-style: none;
   padding: 0;
-  text-align: start;
+  text-align: center;
   padding: 1rem;
   font-size: 1.2rem;
   font-family: var(--font-playfair);
@@ -62,7 +62,7 @@
 }
 
 .not-included {
-  color: red;
+  color: var(--color-text);
 }
 
 .card-button:hover {
