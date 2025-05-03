@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sustainable-web-v2/test/G7.01/static/css/main.72e20012.css",
-    "main.js": "/sustainable-web-v2/test/G7.01/static/js/main.ffe3991d.js",
+    "main.js": "/sustainable-web-v2/test/G7.01/static/js/main.dc85bd2f.js",
     "static/js/453.1b23ba4c.chunk.js": "/sustainable-web-v2/test/G7.01/static/js/453.1b23ba4c.chunk.js",
     "static/media/forest_high.mp4": "/sustainable-web-v2/test/G7.01/static/media/forest_high.e2b4203c3b3d35ecfa89.mp4",
     "static/media/image_12.webp": "/sustainable-web-v2/test/G7.01/static/media/image_12.166d08066ce4c3d5e3d6.webp",
@@ -42,11 +42,11 @@
     "static/media/x.svg": "/sustainable-web-v2/test/G7.01/static/media/x.685ab28e7192aeb4ae9a34cf265c3dbf.svg",
     "static/media/arrow.svg": "/sustainable-web-v2/test/G7.01/static/media/arrow.739f84193b27846431893070f0352ab0.svg",
     "main.72e20012.css.map": "/sustainable-web-v2/test/G7.01/static/css/main.72e20012.css.map",
-    "main.ffe3991d.js.map": "/sustainable-web-v2/test/G7.01/static/js/main.ffe3991d.js.map",
+    "main.dc85bd2f.js.map": "/sustainable-web-v2/test/G7.01/static/js/main.dc85bd2f.js.map",
     "453.1b23ba4c.chunk.js.map": "/sustainable-web-v2/test/G7.01/static/js/453.1b23ba4c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72e20012.css",
-    "static/js/main.ffe3991d.js"
+    "static/js/main.dc85bd2f.js"
   ]
 }
