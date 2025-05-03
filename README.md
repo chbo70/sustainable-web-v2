@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Building a Greener Web: Identifying and Applying Sustainability Guidelines
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains implementations of various web performance optimization methods, with the goal of reducing carbon emission per webpage load. This project was carried out as part of the bachelor thesis at the University of Innsbruck.
 
-## Available Scripts
+## Branch Structure
 
-In the project directory, you can run:
+### 🌟 `master` branch
 
-### `npm start`
+- Contains the **complete implementation** of all optimization methods
+- Represents the most current, fully optimized version
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🌐 `gh-pages` branch
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Hosts different versions of the implementation for comparison
+- Each version is stored in a separate subdirectory:
+  - `/` - Initial implementation
+  - `/test/<G-ID>` - Intermediate optimizations
+  - `/master` - Final version with all optimizations
+- Access deployments at: [https://chbo70.github.io/sustainable-web-v2/<branch-name>/](https://chbo70.github.io/sustainable-web-v2/<branch-name>/)
 
-### `npm test`
+## Key Optimization Methods Implemented
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Category         | Implementations                                                                              |
+| ---------------- | -------------------------------------------------------------------------------------------- |
+| 🖼️ Images        | Vector graphics, SVG optimization, lazy-loading, modern file formats, compression            |
+| 📹 Videos        | Optimized loading strategies, video format optimization, compression, user centred loading   |
+| ✨ Fonts         | Subsetting, modern formats (woff2), host locally, font caching in cookies                    |
+| 💻 Code          | Native JS, async loading, clean code, manual tree shaking, optimized project infrastructure, |
+| 🎨 Design        | Responsive layouts, CSS containment, extended responsive elements <picture>                  |
+| 🔍 SEO           | Optimized metadata, manifest.json, robots.txt, semantic html                                 |
+| ♿ Accessibility | ARIA labels, reduced motion support, screen-reader support                                   |
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Author & Contact
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Boon-Chung Chi**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+University of Innsbruck
 
-### `npm run eject`
+📧 [boon-chung.chi@student.uibk.ac.at](mailto:boon-chung.chi@student.uibk.ac.at)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🐙 [GitHub](https://github.com/chbo70)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2025 Boon-Chung Chi
