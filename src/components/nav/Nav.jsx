@@ -21,7 +21,9 @@ const Nav = () => {
   return (
     <div style={{ height: "200%" }}>
       <nav className="navbar">
-        <img className="logo" alt="logo" src={Logo} />
+        <a className="logo" href="#">
+          <img className="logo" alt="logo" src={Logo} />
+        </a>
         <div className="nav-links">
           {/* eslint-disable-next-line */}
           <a className="nav_link_item" href="#">

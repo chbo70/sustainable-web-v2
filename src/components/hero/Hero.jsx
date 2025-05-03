@@ -11,7 +11,7 @@ const Hero = () => {
           Learn how to create an eco-friendly digital experience.
         </p>
         <div className="hero_cta">
-          <Button className="hero_cta_button" text="Explore" />
+          <Button className="hero_cta_button" text="Explore" link="#" />
         </div>
       </div>
     </section>
