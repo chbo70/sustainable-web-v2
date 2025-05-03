@@ -5,6 +5,15 @@ const Hero = () => {
   return (
     <section className="hero" aria-label="Hero Section for Greener Web">
       <div className="hero_wrapper">
+        <img
+          src={require("../../assets/hero_leaf_square.webp")}
+          alt=""
+          fetchpriority="high"
+          decoding="async"
+          width="1600"
+          height="900"
+          style={{ display: "none" }}
+        />
         <h3 className="hero_title" id="hero-title">
           Building a Greener Web
         </h3>
