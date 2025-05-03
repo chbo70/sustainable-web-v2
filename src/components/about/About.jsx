@@ -12,8 +12,6 @@ import Image7 from "../../assets/slider_images/image_7.avif";
 import Image8 from "../../assets/slider_images/image_8.avif";
 import Image9 from "../../assets/slider_images/image_9.avif";
 
-gsap.registerPlugin();
-
 const images = [
   Image1,
   Image2,
